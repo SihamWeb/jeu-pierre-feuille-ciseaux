@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pierre feuille ciseaux - Mode difficile</title>
+        <link rel="stylesheet" href="styles/styles.css">
+      	<link rel="icon" type="image/ico" href="favicon.ico">
+        <script type="text/javascript" src="scripts/script-pfc-difficile.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </head>
+
+    <body>
+        <script>
+            if(localStorage.getItem("pseudoJoueur") != null){
+                var pseudo = localStorage.getItem("pseudoJoueur"); 
+            }
+        </script> 
+        <div class="screen">
+            <div id="highscore"><p>Highscore</p><span id="highscore_nb">0</span></div>
+            <div id="score"><p>Score</p><span id="score_nb">0</span></div>
+            <div id="accueil_retour"><a href="index.html"><p>Accueil</p><span><<<</span></a></div>
+            <img src="images/computer.gif" id="ghost">
+            <p class="lancement">A vos choix !</p>
+            <p class="lancement">Prêt !</p>
+            <p class="lancement">Partez !</p>
+
+            <div>
+                <p id="resultat">Perdu</p>
+                <div class="score">
+                    <div class="score_joueur"><h2 id="pseudo_joueur_score"></h2><span id="scoreJoueur">0</span></div>
+                    <div class="score_joueur"><h2>Ordinateur</h2><span id="scoreOrdinateur">0</span></div>
+                </div>
+            </div>
+
+            <!--<p id="timer"></p>-->
+            <div class="choix">
+                <img id="ciseaux" src="images/ciseaux.png">
+                <img id="papier" src="images/papier.png">
+                <img id="pierre" src="images/pierre.png">
+            </div>
+        </div>
+        <script>
+            document.getElementById("pseudo_joueur_score").innerHTML = pseudo;
+        </script>
+    </body>
+</html>

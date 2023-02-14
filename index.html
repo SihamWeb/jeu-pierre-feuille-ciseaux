@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pierre feuille ciseaux</title>
+        <link rel="stylesheet" href="styles/styles.css">
+      	<link rel="icon" type="image/ico" href="favicon.ico">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </head>
+
+    <body>
+        <div class="screen">
+            <div id="ecran_start">
+                <img src="images/triangle.png" id="triangle">
+                <h1 id="start">START</h1>
+            </div>
+
+            <form id="pseudo_joueur">
+                <label id="text_label" for="pseudo"> Pseudo :</label><input size=3 placeholder="_" type="text" id="pseudo" value="" maxLength="3">
+                <p id="warning_pseudo">Entrez un pseudo de 3 caractères</p>
+                <br><br><br><br><br>
+                <input id="continuer1" class="son-default" type="button" value="Continuer">
+                <p id="retour_start" class="son-default"><< Retour</p>
+            </form>
+
+            <div id="choix_level">
+                <h1>Choisissez votre niveau de difficulté</h1>
+                <br><br><br><br><br>
+                <h2 id="classique" class="son-default">Classique</h2>
+                <br>
+                <h2 id="difficile" class="son-default">Difficile</h2>
+                <br><br><br>
+                <h2 id="retour_pseudo" class="son-default"><< Retour</h2>
+            </div>
+
+            <div id="regle_classique">
+                <h1> Mode Classique </h1>
+                <br>
+                <p id="retour_classique"></p>
+                <br><br><br>
+                <p id="retour_mode1" class="son-default">Retour</p><a href="jeu.html" class="son-default">Jouer</a>
+            </div>
+
+            <div id="regle_difficile">
+                <h1> Mode Difficile </h1>
+                <br>
+                <p id="retour_difficile"></p>
+                <br><br><br>
+                <p id="retour_mode2" class="son-default">Retour</p><a href="jeu-difficile.html" class="son-default">Jouer</a>
+            </div>
+        </div>
+    </body>
+</html>

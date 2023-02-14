@@ -1,0 +1,4 @@
+<regles>
+	<classique>Le jeu pierre, feuille, ciseaux tel que vous le connaissez ! La pierre casse les ciseaux, la feuille recouvre la pierre et les ciseaux coupent la feuille. C'est parti !</classique>
+	<difficile>2 choix supplémentaires s'offrent à l'ordinateur : la bombe et le puit ! La bombe explose la pierre et brûle la feuille mais les ciseaux lui coupent la mèche. Le puit se fait envelopper par la feuille mais avale la pierre et les ciseaux. Vous n'aurez pas ces deux perles, à vous de jouer !</difficile>
+</regles>
